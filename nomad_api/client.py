@@ -63,9 +63,6 @@ class NomadClient:
 
             # Return JSON data if there is a response body, otherwise None
             if response.text:
-                print(
-                    f"API Response: {response.status_code} - {response.text[:100]}..."
-                )  # Log first 100 chars
                 return response.json()
             return None
 
